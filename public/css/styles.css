@@ -1,0 +1,29 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --color-primary: #1e5e98;
+  --color-secondary: #0f0c29;
+  --font-primary: arial;
+}
+
+body {
+  font-family: var(--font-primary);
+}
+
+h1 {
+  color: var(--color-primary);
+  font-size: 3rem;
+}
+
+#description {
+  color: var(--color-secondary);
+}
+
+.outline {
+  color: var(--color-primary);
+  font-weight: bold;
+}
