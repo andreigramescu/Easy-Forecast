@@ -23,7 +23,7 @@ hbs.registerPartials(partialsPath);
 app.use(express.static(publicDirPath));
 app.use(
   cors({
-    origin: "https://unruffled-galileo-41b836.netlify.app/",
+    origin: "https://unruffled-galileo-41b836.netlify.app",
   })
 );
 
