@@ -1,5 +1,6 @@
 const path = require("path");
 const express = require("express");
+const cors = require("cors");
 const hbs = require("hbs");
 const geocode = require("./utils/geocode");
 const forecast = require("./utils/forecast");
@@ -20,6 +21,11 @@ hbs.registerPartials(partialsPath);
 
 // Setup static directory to serve
 app.use(express.static(publicDirPath));
+app.use(
+  cors({
+    origin: "https://unruffled-galileo-41b836.netlify.app/",
+  })
+);
 
 app.get("", (req, res) => {
   res.render("index", {
